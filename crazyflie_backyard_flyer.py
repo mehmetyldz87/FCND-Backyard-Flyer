@@ -71,7 +71,7 @@ class BackyardFlyer(Drone):
     def calculate_box(self):
         cp = self.local_position
         cp[2] = 0
-        local_waypoints = [cp + [1.5, 0.0, 0.5], cp + [1.5, 0.8, 0.8], cp + [0.0, 1.5, 0.6], cp + [0.0, 0.0, 0.3]]
+        local_waypoints = [cp + [1.0, 0.0, 0.5], cp + [1.0, 1.0, 0.5], cp + [.0, 1.0, 0.5], cp + [0.0, 0.0, 0.5]]
         return local_waypoints
 
     def arming_transition(self):
